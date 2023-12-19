@@ -1,31 +1,46 @@
-# react-native-timer
+<br>
 
-Modern API for Timer
+<h3 style="font-size: 5em" align="center">
+    Modern (Hook Based ) API for React Native Timer
+</h3>
 
-## Installation
+<p align="center">
+    Easy to use yet powerful Timer library. Keep your code clean
+</p>
 
-```sh
-npm install react-native-timer
-```
+<p align="center">
+    <img alt="Timer Examples" src="https://github.com/Mijick/Assets/blob/main/Timer/GIFs/Timer.gif"/>
+</p>
 
-## Usage
+<br>
 
-```js
-import { multiply } from 'react-native-timer';
+Timer is a free and open-source library dedicated for React Native that makes the process of handling timers easier and much cleaner.
+* **Improves code quality.** Start timer using the `useTimer` hook. Stop the timer with `stop()` method. Simple as never.
+* **Run your timer in both directions.** Our Timer can operate in both modes (increasing or decreasing).
+* **Supports background mode.** Don't worry about the timer when the app goes into the background. We handled it!
+* **And much more.** Our library allows you to convert the current time to a string or to display the timer progress in no time.
 
-// ...
+<br>
 
-const result = await multiply(3, 7);
-```
+# Getting Started
+### ✋ Requirements
 
-## Contributing
+| **Platforms** | **Minimum React Native Version** |
+|:----------|:----------|
+| iOS | Android | 0.68.0 |
 
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+### ⏳ Installation
 
-## License
+```yarn add @praella/react-native-timer``` OR ```npm install --save @praella/react-native-timer```
 
-MIT
 
----
+<br>
 
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+# Try our demo
+See for yourself how does it work by cloning [project][Demo] we created
+                      
+# License
+Timer is released under the MIT license. See [LICENSE][License] for details.
+                      
+<br><br>
+
