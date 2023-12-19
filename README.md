@@ -27,7 +27,7 @@ Timer is a free and open-source library dedicated for React Native that makes th
 
 | **Platforms** | **Minimum React Native Version** |
 |:----------|:----------|
-| iOS | Android | 0.68.0 |
+| iOS Android | 0.68.0 |
 
 ### ⏳ Installation
 
