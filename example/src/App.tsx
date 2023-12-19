@@ -1,31 +1,27 @@
-import * as React from 'react';
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+import { useTime } from 'react-native-timer'; // Adjust the import based on your actual file structure
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-timer';
-
-export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
+const App = () => {
+  const { hours, minutes, seconds, ampm } = useTime({ format: '12-hour' });
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text style={styles.text}>{`${hours}:${minutes}:${seconds} ${ampm}`}</Text>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
   },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
+  text: {
+    fontSize: 24,
+    fontWeight: 'bold',
   },
 });
+
+export default App;
