@@ -29,7 +29,7 @@
     "example": "yarn workspace react-native-timer-example",
     "test": "jest",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "lint": "clear",
     "clean": "del-cli lib",
     "prepare": "bob build",
     "release": "release-it"
